@@ -4,5 +4,29 @@
         <name>WebApi</name>
     </assembly>
     <members>
+        <member name="T:WebApi.Startup">
+            <summary>
+            Startup class of the WebApi project
+            </summary>
+        </member>
+        <member name="M:WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor for the Startup class
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container. 
+            </summary>
+            <param name="services">Services to add to the collection</param>
+        </member>
+        <member name="M:WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Provides the mechanism to configure application request pipeline</param>
+            <param name="env">The hosting environment</param>
+        </member>
     </members>
 </doc>
